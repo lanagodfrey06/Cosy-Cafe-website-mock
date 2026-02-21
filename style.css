@@ -1,0 +1,142 @@
+/* === Color Palette === */
+body {
+  background-color: #fefaf3; /* Cream */
+  /* font-family: 'Segoe UI', sans-serif; */
+   font-family: 'Roboto', Arial, sans-serif;
+  color: #4e3b2c; /* Warm brown */
+   padding-top: 70px; 
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+}
+.nav-pills .nav-link {
+  background: #f7f3ef;
+  color: #7c5c3b;
+  transition: background 0.2s, color 0.2s;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+.nav-pills .nav-link.active {
+  background: #7c5c3b;
+  color: #fff;
+}
+.text-green {
+  color: #4e7c59;
+}
+
+
+/* Text Colors */
+.text-brown {
+  color: #4e3b2c;
+}
+
+.text-green {
+  color: #8aa07b;
+}
+
+/* Backgrounds */
+.bg-cream {
+  background-color: #b8ad9b !important;
+}
+
+.bg-light-green {
+  background-color: #eaf0e1;
+}
+
+/* Buttons */
+.btn-green {
+  background-color: #8aa07b;
+  color: white;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-green:hover {
+  background-color: #758c66;
+}
+
+/* Hero Section */
+/* .hero {
+  background-image: url('images/hero-coffee.jpg'); 
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+  text-shadow: 1px 1px 2px #d9d9d9;
+} */
+
+.hero {
+  background-image: url('coffeeheader.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 550px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  /* Parallax effect: */
+  background-attachment: fixed;
+}
+.na
+
+.hero h1 {
+  font-weight: 700;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+.bg-brown {
+  background-color: #3f3a36 !important;
+  color: #fff;
+}
+/* Menu Section */
+.menu-section {
+  background-color: #fffdf7;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+/* Gallery */
+.gallery-img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+}
+
+.gallery-img:hover {
+  transform: scale(1.03);
+}
+
+/* About Section */
+.about-section {
+  background-color: #fffdf7;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+/* Form Styling */
+form .form-control {
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+form .btn {
+  border-radius: 8px;
+}
+
+/* Footer */
+footer {
+  font-size: 0.9rem;
+  background-color: #b8ad9b;
+}
+
+.card-body{
+  background-color: rgb(220, 209, 196);
+}

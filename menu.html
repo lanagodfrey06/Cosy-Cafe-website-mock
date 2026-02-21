@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu | Cozy Bean Café</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar (same as index.html) -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-cream shadow-sm fixed-top">
+    <div class="container">
+       <a class="navbar-brand text-brown" href="index.html"> <img src="images/headerlogo.png" alt="Cozy Bean Café Logo" style="height:40px; vertical-align:middle; margin-right:8px;">Cozy Bean Café</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link text-brown" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link text-brown" href="menu.html">Menu</a></li>
+          <li class="nav-item"><a class="nav-link text-brown" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link text-brown" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link text-brown" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Menu Sections -->
+  <!-- <div class="container py-5">
+    <h2 class="text-center text-brown mb-4">Our Menu</h2>
+
+    <div class="mb-5">
+      <h3 class="text-green">Breakfast</h3>
+      <ul>
+        <li>Avocado Toast - £5.50</li>
+        <li>Pancake Stack with Maple Syrup - £6.00</li>
+        <li>Granola Bowl with Berries - £4.80</li>
+      </ul>
+    </div>
+
+    <div class="mb-5">
+      <h3 class="text-green">Mains</h3>
+      <ul>
+        <li>Grilled Halloumi Wrap - £7.50</li>
+        <li>Chicken Pesto Panini - £7.00</li>
+        <li>Vegan Buddha Bowl - £8.00</li>
+      </ul>
+    </div>
+
+    <div class="mb-5">
+      <h3 class="text-green">Drinks</h3>
+      <ul>
+        <li>Flat White - £2.80</li>
+        <li>Iced Latte - £3.00</li>
+        <li>Herbal Tea Selection - £2.50</li>
+      </ul>
+    </div>
+  </div> -->
+
+  <div class="container py-5">
+  <h2 class="text-center text-brown mb-5">Our Menu</h2>
+
+  <!-- Menu Tabs -->
+  <ul class="nav nav-pills justify-content-center mb-4 gap-3" id="menuTabs" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active px-4 py-2 rounded-pill" id="drinks-tab" data-bs-toggle="tab" data-bs-target="#drinks" type="button" role="tab" aria-controls="drinks" aria-selected="true">
+        Drinks
+      </button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link px-4 py-2 rounded-pill" id="breakfast-tab" data-bs-toggle="tab" data-bs-target="#breakfast" type="button" role="tab" aria-controls="breakfast" aria-selected="false">
+        Breakfast
+      </button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link px-4 py-2 rounded-pill" id="brunch-tab" data-bs-toggle="tab" data-bs-target="#brunch" type="button" role="tab" aria-controls="brunch" aria-selected="false">
+        Brunch
+      </button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link px-4 py-2 rounded-pill" id="cakes-tab" data-bs-toggle="tab" data-bs-target="#cakes" type="button" role="tab" aria-controls="cakes" aria-selected="false">
+        Cakes
+      </button>
+    </li>
+  </ul>
+
+  <!-- Tab Content -->
+  <div class="tab-content bg-white rounded shadow-sm p-4" id="menuTabsContent">
+    <div class="tab-pane fade show active" id="drinks" role="tabpanel" aria-labelledby="drinks-tab">
+      <h3 class="text-green mb-3">Drinks</h3>
+      <ul class="list-unstyled">
+        <li><strong>Flat White</strong> <span class="text-muted">– £2.80</span></li>
+        <li><strong>Iced Latte</strong> <span class="text-muted">– £3.00</span></li>
+        <li><strong>Herbal Tea Selection</strong> <span class="text-muted">– £2.50</span></li>
+        <li><strong>Espresso</strong> <span class="text-muted">– £2.20</span></li>
+      </ul>
+    </div>
+    <div class="tab-pane fade" id="breakfast" role="tabpanel" aria-labelledby="breakfast-tab">
+      <h3 class="text-green mb-3">Breakfast</h3>
+      <ul class="list-unstyled">
+        <li><strong>Avocado Toast</strong> <span class="text-muted">– £5.50</span></li>
+        <li><strong>Pancake Stack with Maple Syrup</strong> <span class="text-muted">– £6.00</span></li>
+        <li><strong>Granola Bowl with Berries</strong> <span class="text-muted">– £4.80</span></li>
+      </ul>
+    </div>
+    <div class="tab-pane fade" id="brunch" role="tabpanel" aria-labelledby="brunch-tab">
+      <h3 class="text-green mb-3">Brunch</h3>
+      <ul class="list-unstyled">
+        <li><strong>Grilled Halloumi Wrap</strong> <span class="text-muted">– £7.50</span></li>
+        <li><strong>Chicken Pesto Panini</strong> <span class="text-muted">– £7.00</span></li>
+        <li><strong>Vegan Buddha Bowl</strong> <span class="text-muted">– £8.00</span></li>
+      </ul>
+    </div>
+    <div class="tab-pane fade" id="cakes" role="tabpanel" aria-labelledby="cakes-tab">
+      <h3 class="text-green mb-3">Cakes</h3>
+      <ul class="list-unstyled">
+        <li><strong>Carrot Cake</strong> <span class="text-muted">– £3.20</span></li>
+        <li><strong>Chocolate Brownie</strong> <span class="text-muted">– £2.80</span></li>
+        <li><strong>Lemon Drizzle</strong> <span class="text-muted">– £3.00</span></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+  <footer class="bg-cream text-center p-3 mt-5">
+    <small class="text-brown">&copy; 2025 Cozy Bean Café. All rights reserved.</small>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
